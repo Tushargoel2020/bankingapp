@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 500px;
+        }
+        .accountno{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            
+            
+        }
+        h1{
+            display: flex;
+            align-items: center;
+            height: 100px;
+            /* background-color: aqua; */
+            /* border: 1px solid rgb(31, 50, 50); */
+            margin-top:50px;
+             height: 150px;
+             padding: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        button{
+            background-color: blue;
+            height: 40px;
+            border-radius: 10%;
+
+        }
+        .main{
+            margin: 20px;
+            background-color: antiquewhite;
+            text-align: center;
+            height: 500px;
+        }
+
+        @media (max-width: 500px){
+            .main{
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="accountno">
+         <h1>your account number is {{accountid}}</h1>
+         
+         
+    </div>
+    <button ><a href="./">Go to home page</a></button>
+</div>
+   
+</body>
+</html>

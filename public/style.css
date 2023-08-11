@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./bank2.jpg);
+    background-size:cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    
+}
+
+.mobile{
+    display: none;
+}
+.menu-bar{
+    background: rgb(47, 11, 167);
+    text-align: center;
+
+}
+
+#contact{
+    background-color: black;
+    border: 1px solid black;
+}
+.menu-bar ul{
+    display: flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li {
+    width: 150px;
+    padding: 12px;
+    margin: 15px;  
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+ .menu-bar ul li:hover{
+    background-color: #1865a4;
+    border-radius: 3px;
+}
+.menu-bar .fa-solid{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+}
+
+.menu-bar ul li:hover  .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(45, 5, 174);
+    margin-top: 17px;
+    margin-left: 5px;
+    z-index: 1000;
+}
+
+.menu-bar ul li:hover  .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover  .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: center;
+
+}
+.nav-item{
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width : 550px){
+    
+    .mobile{
+        display: block;
+    }
+    .mobileblock{
+        display: none;
+    }
+    .drop-down-1{
+        display: none;
+    }
+    .nav-item{
+        display: flex;
+        justify-content: space-between;
+    }
+    .subdrop-down-1{
+        display: none;
+    }
+    .menu-bar ul li {
+        width: 70px;
+        padding: 10px;
+        margin: 15px;  
+    }
+    .menu-bar ul li:hover  .drop-down-1{
+        display: block;
+        position: absolute;
+        right: 1px;
+        background: rgb(45, 5, 174);
+        margin-top: 15px;
+        z-index: 1000;
+        
+        
+    }
+    .menu-bar ul li:hover  .drop-down-1 ul{
+        display: block;
+        margin: 10px;
+    }
+    .fa-solid{
+        margin: 0px  2px 0px 0px;
+    }
+    .nav-item-2 li:hover .subdrop-down-1{
+        background-color: rgb(45, 5, 174);
+        display: block;
+        position: absolute;
+        right: 120px;
+    }
+   
+    
+
+
+}
+
+
+
